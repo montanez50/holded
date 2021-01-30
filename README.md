@@ -186,3 +186,21 @@ $listpayments = $payment->list();
 
 print_r($listpayments);
 ```
+<h3>List Treasuries</h3>
+
+```
+<?php 
+require_once("vendor/autoload.php");
+use Holded\Caller;
+use Holded\Payment;
+
+
+$caller = new Caller ('XXXXXXXXXXXXXXXXXXXXXXXXX');
+
+
+$treasury = new Treasury ($caller);
+
+$list_treasuries = $treasury->list();
+
+print_r($list_treasuries);
+```
