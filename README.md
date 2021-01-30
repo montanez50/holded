@@ -192,7 +192,7 @@ print_r($listpayments);
 <?php 
 require_once("vendor/autoload.php");
 use Holded\Caller;
-use Holded\Payment;
+use Holded\Treasury;
 
 
 $caller = new Caller ('XXXXXXXXXXXXXXXXXXXXXXXXX');
