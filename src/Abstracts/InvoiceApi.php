@@ -30,6 +30,6 @@ abstract class InvoiceApi
         $this->call->setBaseEndpoint($this->base_endpoint);
         $this->call->setEndpoint($endpoint);
         $this->call->setMethod($name);
-        return $this->call->call($arguments[0] ?? [], $arguments[1] ?? '');
+        return $this->call->call($arguments[0] ?? [], isset($arguments[1]) ? array_slice($arguments,1) : ''  );
     }
 }

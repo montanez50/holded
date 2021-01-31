@@ -75,8 +75,10 @@ class Caller
                 break;
             case 'create':
                 $method='POST';
-                 break;
-            
+                break;
+            case 'pay':
+                $method='POST';
+                break;
             default:
                 return;
                 break;

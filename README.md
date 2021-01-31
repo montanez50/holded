@@ -149,6 +149,42 @@ $response = $document->create(['body' => $docData], $docType );
 print_r($response);
 ```
 
+
+<h3>Pay Document</h3>
+
+```
+<?php 
+require_once("vendor/autoload.php");
+use Holded\Caller;
+use Holded\Document;
+use GuzzleHttp\Exception\ClientException;
+
+
+$caller = new Caller ('XXXXXXXXXXXXXXXXXXXXXXXXXXX');
+
+
+$document = new Document ($caller);
+$invoiceid='SPSPSPSPSPPSPSPS';
+	
+    
+    
+ $params=["date"		=>time(),
+		'treasury'	=>'TTTTTTTTTTTTTTTTTTTTTTTT'    //stripe
+        ];
+try {
+    $response = $document->pay(['body' => $params],'invoice',$invoiceid,'pay');
+} catch (ClientException $e) {
+    $response = $e->getResponse()
+                    ->getBody()
+                    ->getContents();
+}
+
+        
+
+print_r($response);	
+```
+
+
 <h3>List Channels Sales</h3>
 
 ```
