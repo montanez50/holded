@@ -8,14 +8,14 @@ use Holded\Abstracts\InvoiceApi;
  * @package Holded
  *
  */
-class Treasury extends InvoiceApi
+class Funnel extends InvoiceApi
 {
 
     protected $methods = ['list','create','get','update','delete' ];
 
     protected $pluralizeMethods = [];
 
-    protected $endpoint = 'treasury';
+    protected $endpoint = 'funnel';
 
     public function __construct(Caller $call)
     {
