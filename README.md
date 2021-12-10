@@ -240,3 +240,21 @@ $list_treasuries = $treasury->list();
 
 print_r($list_treasuries);
 ```
+<h3>List Funnels</h3>
+
+```
+<?php 
+require_once("vendor/autoload.php");
+use Holded\Caller;
+use Holded\Funnel;
+
+
+$caller = new Caller ('XXXXXXXXXXXXXXXXXXXXXX');
+
+
+$funnel = new Funnel ($caller);
+
+$funnellist = $funnel->list();
+
+print_r($funnellist);
+```
