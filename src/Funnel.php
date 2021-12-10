@@ -8,7 +8,7 @@ use Holded\Abstracts\InvoiceApi;
  * @package Holded
  *
  */
-class Funnel extends InvoiceApi
+class Funnel extends CrmApi
 {
 
     protected $methods = ['list','create','get','update','delete' ];
