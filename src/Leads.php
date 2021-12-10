@@ -1,7 +1,7 @@
 <?php
 
 namespace Holded;
-use Holded\Abstracts\InvoiceApi;
+use Holded\Abstracts\CrmApi;
 
 /**
  * Class Contacts
