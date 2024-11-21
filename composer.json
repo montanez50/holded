@@ -1,12 +1,17 @@
 {
-    "name": "vshopes/holded",
-    "description": "Api package to use Holded Api",
+    "name": "montanez50/holded",
+    "description": "Api package to use Holded Api Fork of Shopes",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Angel Gomez",
             "email": "angel.gomez@vshop.es"
+        },
+        {
+            "name": "Pedro Montañez",
+            "email": "pedromonta549@gmail.com",
+            "role": "Developer"
         }
     ],
     "autoload": {
