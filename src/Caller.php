@@ -67,14 +67,16 @@ class Caller
     {
         $params = array_merge(['headers' =>['key' => $this->token]], $params);
 
-
-
         switch ($this->method) {
+            case 'get':
             case 'list':
                 $method='GET';
                 break;
             case 'create':
                 $method='POST';
+                break;
+            case 'update':
+                $method='PUT';
                 break;
             case 'pay':
                 $method='POST';
@@ -88,7 +90,6 @@ class Caller
             $params['headers']['Content-Type'] = 'application/json'; 
             $params['body'] = json_encode($params['body']);
         }
-
 
         try {
             $response = $this->client->request( $method, $this->getUrl($id), $params);
