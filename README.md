@@ -20,11 +20,17 @@ Implemented
     - DOCUMENTS
         - List documents
         - List document
+        - Get Document
+        - Update Document
         - Create document
+    - Contact
+        - List contacts
+        - Get contacts
+        - Update contacts
     - SALES CHANNELS
         - List channels sales 
     - PAYMENTS
-        - List payments 
+        - List payments
 
 
 <h2>Examples</h2>
